@@ -9,7 +9,7 @@ basic.forever(function () {
     DigitalPin.P1,
     PingUnit.Centimeters
     )
-    if (distance < 40 && distance != 0 && !(isAlarmStopped)) {
+    if (distance < 50 && distance != 0 && !(isAlarmStopped)) {
         music.playTone(988, music.beat(BeatFraction.Whole))
         basic.pause(100)
     }
